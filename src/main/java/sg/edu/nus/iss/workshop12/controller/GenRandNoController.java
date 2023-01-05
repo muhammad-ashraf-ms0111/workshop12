@@ -37,6 +37,8 @@ public class GenRandNoController {
         return "generate";
     }
 
+    //Can use either one way
+
     @GetMapping(path="/generate")
     public String generateRandNumByGet(@RequestParam Integer numberVal, Model model){
         this.randomizeNum(model, numberVal.intValue());
